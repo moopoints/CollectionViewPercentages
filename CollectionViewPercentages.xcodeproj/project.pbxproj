@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F57CC920200EE20300104E3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57CC91F200EE20300104E3D /* AppDelegate.swift */; };
-		F57CC922200EE20300104E3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57CC921200EE20300104E3D /* ViewController.swift */; };
-		F57CC925200EE20300104E3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57CC923200EE20300104E3D /* Main.storyboard */; };
+		F57CC922200EE20300104E3D /* CellsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57CC921200EE20300104E3D /* CellsController.swift */; };
 		F57CC928200EE20400104E3D /* CollectionViewPercentages.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F57CC926200EE20400104E3D /* CollectionViewPercentages.xcdatamodeld */; };
 		F57CC92A200EE20400104E3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F57CC929200EE20400104E3D /* Assets.xcassets */; };
 		F57CC92D200EE20400104E3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57CC92B200EE20400104E3D /* LaunchScreen.storyboard */; };
 		F57CC938200EE20400104E3D /* CollectionViewPercentagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57CC937200EE20400104E3D /* CollectionViewPercentagesTests.swift */; };
 		F57CC943200EE20400104E3D /* CollectionViewPercentagesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57CC942200EE20400104E3D /* CollectionViewPercentagesUITests.swift */; };
+		F57CC951200EE56900104E3D /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57CC950200EE56900104E3D /* CustomCell.swift */; };
+		F57CC953200EE85B00104E3D /* CircularGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57CC952200EE85B00104E3D /* CircularGraph.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +38,7 @@
 /* Begin PBXFileReference section */
 		F57CC91C200EE20300104E3D /* CollectionViewPercentages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewPercentages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F57CC91F200EE20300104E3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F57CC921200EE20300104E3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F57CC924200EE20300104E3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F57CC921200EE20300104E3D /* CellsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellsController.swift; sourceTree = "<group>"; };
 		F57CC927200EE20400104E3D /* CollectionViewPercentages.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CollectionViewPercentages.xcdatamodel; sourceTree = "<group>"; };
 		F57CC929200EE20400104E3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F57CC92C200EE20400104E3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		F57CC93E200EE20400104E3D /* CollectionViewPercentagesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewPercentagesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F57CC942200EE20400104E3D /* CollectionViewPercentagesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewPercentagesUITests.swift; sourceTree = "<group>"; };
 		F57CC944200EE20400104E3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F57CC950200EE56900104E3D /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		F57CC952200EE85B00104E3D /* CircularGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularGraph.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				F57CC91F200EE20300104E3D /* AppDelegate.swift */,
-				F57CC921200EE20300104E3D /* ViewController.swift */,
-				F57CC923200EE20300104E3D /* Main.storyboard */,
+				F57CC921200EE20300104E3D /* CellsController.swift */,
+				F57CC950200EE56900104E3D /* CustomCell.swift */,
+				F57CC952200EE85B00104E3D /* CircularGraph.swift */,
 				F57CC929200EE20400104E3D /* Assets.xcassets */,
 				F57CC92B200EE20400104E3D /* LaunchScreen.storyboard */,
 				F57CC92E200EE20400104E3D /* Info.plist */,
@@ -237,7 +240,6 @@
 			files = (
 				F57CC92D200EE20400104E3D /* LaunchScreen.storyboard in Resources */,
 				F57CC92A200EE20400104E3D /* Assets.xcassets in Resources */,
-				F57CC925200EE20300104E3D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F57CC922200EE20300104E3D /* ViewController.swift in Sources */,
+				F57CC922200EE20300104E3D /* CellsController.swift in Sources */,
+				F57CC953200EE85B00104E3D /* CircularGraph.swift in Sources */,
 				F57CC928200EE20400104E3D /* CollectionViewPercentages.xcdatamodeld in Sources */,
+				F57CC951200EE56900104E3D /* CustomCell.swift in Sources */,
 				F57CC920200EE20300104E3D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,14 +304,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F57CC923200EE20300104E3D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F57CC924200EE20300104E3D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F57CC92B200EE20400104E3D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
