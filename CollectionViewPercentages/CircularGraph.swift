@@ -33,7 +33,17 @@ class CircularGraph: UIView {
     var progressLayerStrokeStart: CGFloat = 0                  { didSet { progressLayer.strokeStart = progressLayerStrokeStart } }
     
     var trackLayerStrokeEnd:   CGFloat = 1                     { didSet { trackLayer.strokeEnd = trackLayerStrokeEnd } }
-    var progressLayerStrokeEnd:   CGFloat = 1                  { didSet { progressLayer.strokeEnd = progressLayerStrokeEnd } }
+    
+    
+    var progressLayerStrokeEnd: CGFloat = 1 {
+        didSet {
+            CATransaction.begin()
+            CATransaction.setDisableActions(true)
+            progressLayer.strokeEnd = progressLayerStrokeEnd
+            CATransaction.commit()
+        }
+    }
+    
     
     
     

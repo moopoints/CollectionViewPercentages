@@ -37,6 +37,11 @@ class CellsController: UICollectionViewController, UICollectionViewDelegateFlowL
         return CGSize(width: view.frame.width, height: 156)
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        let insets = UIEdgeInsets(top: 10, left: 5, bottom: 10, right: 5)
+        return insets
+    }
+    
     
     @objc func didPressReload() {
         collectionView?.reloadData()
